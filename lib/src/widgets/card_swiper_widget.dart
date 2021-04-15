@@ -22,6 +22,7 @@ class CardSwiper extends StatelessWidget {
         itemWidth: _screenSize.width * 0.7,
         itemHeight: _screenSize.height * 0.5,
         layout: SwiperLayout.STACK,
+        itemCount: peliculas.length,
         itemBuilder: (BuildContext context,int index){
           return ClipRRect(
             borderRadius: BorderRadius.circular(20.0),
@@ -32,7 +33,7 @@ class CardSwiper extends StatelessWidget {
             )
           );
         },
-        itemCount: peliculas.length,
+        
           
         //pagination: new SwiperPagination(),
         //control: new SwiperControl(),
