@@ -73,6 +73,17 @@ class Pelicula {
     }
     
   }
+
+  getBackgroundImg(){
+
+    if(backdropPath == null){
+      return 'https://www.innovativespinesystems.com/images/stories/virtuemart/product/Imagen-no-disponible.png';
+    }
+    else{
+      return 'https://image.tmdb.org/t/p/w500/$backdropPath';
+    }
+    
+  }
 }
 
 
